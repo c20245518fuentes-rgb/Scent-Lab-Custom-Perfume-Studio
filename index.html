@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your signature scent at Scent Lab, a custom perfume studio.">
+  <title>Scent Lab | Custom Perfume Studio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 browser CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Custom theme tokens -->
+  <style type="text/tailwindcss">
+    @theme {
+      --color-cream: #F5F0E8;
+      --color-ink: #29251F;
+      --color-gold: #B58A5A;
+      --color-sand: #E7DED1;
+      --color-muted: #71695F;
+
+      --font-display: "Playfair Display", serif;
+      --font-body: "DM Sans", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-cream font-body text-ink">
+
+  <!-- Header -->
+  <header class="border-b border-sand bg-cream">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5"
+         aria-label="Main navigation">
+
+      <a href="#home" class="font-display text-2xl font-bold tracking-wide">
+        Scent<span class="text-gold">Lab.</span>
+      </a>
+
+      <ul class="hidden items-center gap-8 md:flex">
+        <li><a href="#discover" class="text-sm hover:text-gold">Discover</a></li>
+        <li><a href="#collection" class="text-sm hover:text-gold">Collection</a></li>
+        <li><a href="#story" class="text-sm hover:text-gold">Our Story</a></li>
+        <li><a href="#contact" class="text-sm hover:text-gold">Contact</a></li>
+      </ul>
+
+      <a href="#customize"
+         class="rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white hover:bg-gold">
+        Create Your Scent
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+
+      <div>
+        <p class="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+          Your scent. Your story.
+        </p>
+
+        <h1 class="mb-6 font-display text-5xl leading-tight md:text-7xl">
+          A fragrance that feels like <span class="italic text-gold">you.</span>
+        </h1>
+
+        <p class="mb-8 max-w-lg leading-8 text-muted">
+          Discover the art of personal fragrance. Explore beautiful scent
+          families and find a perfume that captures your personality.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#customize"
+             class="rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white hover:bg-gold">
+            Build Your Fragrance
+          </a>
+
+          <a href="#discover"
+             class="rounded-full border border-ink px-7 py-4 text-sm font-semibold hover:bg-sand">
+            Explore Scents
+          </a>
+        </div>
+
+        <div class="mt-10 flex gap-8 border-t border-sand pt-6">
+          <div>
+            <p class="font-display text-2xl">12+</p>
+            <p class="mt-1 text-xs text-muted">Fragrance Notes</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl">100%</p>
+            <p class="mt-1 text-xs text-muted">Personal Expression</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl">1 of 1</p>
+            <p class="mt-1 text-xs text-muted">Your Signature</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex min-h-96 items-center justify-center rounded-3xl bg-sand p-8">
+        <div class="w-full max-w-sm rounded-t-full border border-white/70 bg-cream px-8 pb-10 pt-12 text-center shadow-xl">
+          <div class="mx-auto mb-6 flex h-52 w-36 items-center justify-center rounded-t-3xl rounded-b-xl border border-gold/60 bg-gradient-to-br from-white via-[#E8D4B7] to-[#B58A5A]">
+            <div class="flex h-28 w-24 flex-col items-center justify-center border border-gold/70 bg-cream/90">
+              <span class="font-display text-xl">SL.</span>
+              <span class="mt-1 text-[8px] tracking-[0.2em]">SCENT LAB</span>
+              <span class="mt-2 text-[7px] tracking-widest">EAU DE PARFUM</span>
+            </div>
+          </div>
+
+          <p class="font-display text-2xl">The Art of Scent</p>
+          <p class="mt-2 text-sm text-muted">Crafted around you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section id="discover" class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-7xl">
+
+        <div class="mb-12 max-w-2xl">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+            Find your notes
+          </p>
+          <h2 class="mb-4 font-display text-4xl md:text-5xl">
+            Discover your scent family
+          </h2>
+          <p class="leading-7 text-muted">
+            Every fragrance tells a different story. Explore these scent
+            families and discover which one speaks to you.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="rounded-2xl border border-sand p-6">
+            <div class="mb-6 flex h-36 items-center justify-center rounded-xl bg-[#E9D9C5] text-5xl">🌳</div>
+            <h3 class="mb-2 font-display text-2xl">Woody</h3>
+            <p class="mb-4 text-sm leading-6 text-muted">
+              Warm, grounded, and timeless notes inspired by nature.
+            </p>
+            <p class="text-xs font-semibold uppercase tracking-widest text-gold">
+              Cedar · Sandalwood
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-sand p-6">
+            <div class="mb-6 flex h-36 items-center justify-center rounded-xl bg-[#F1DFD8] text-5xl">🌹</div>
+            <h3 class="mb-2 font-display text-2xl">Floral</h3>
+            <p class="mb-4 text-sm leading-6 text-muted">
+              Soft, romantic, and expressive scents inspired by flowers.
+            </p>
+            <p class="text-xs font-semibold uppercase tracking-widest text-gold">
+              Rose · Jasmine
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-sand p-6">
+            <div class="mb-6 flex h-36 items-center justify-center rounded-xl bg-[#E4E8D9] text-5xl">🍃</div>
+            <h3 class="mb-2 font-display text-2xl">Fresh</h3>
+            <p class="mb-4 text-sm leading-6 text-muted">
+              Clean, bright, and refreshing notes for everyday wear.
+            </p>
+            <p class="text-xs font-semibold uppercase tracking-widest text-gold">
+              Citrus · Green Tea
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-sand p-6">
+            <div class="mb-6 flex h-36 items-center justify-center rounded-xl bg-[#E8DDEB] text-5xl">🌙</div>
+            <h3 class="mb-2 font-display text-2xl">Oriental</h3>
+            <p class="mb-4 text-sm leading-6 text-muted">
+              Rich, mysterious, and captivating scents with depth.
+            </p>
+            <p class="text-xs font-semibold uppercase tracking-widest text-gold">
+              Amber · Vanilla
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Customizer Introduction -->
+    <section id="customize" class="px-6 py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 rounded-3xl bg-sand p-8 md:grid-cols-2 md:p-14">
+
+        <div>
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+            Made personal
+          </p>
+          <h2 class="mb-5 font-display text-4xl md:text-5xl">
+            Your fragrance, your rules.
+          </h2>
+          <p class="mb-6 leading-7 text-muted">
+            A signature scent should feel personal. Our fragrance customization
+            experience will help you explore notes and create a combination
+            that reflects your style.
+          </p>
+          <a href="#contact"
+             class="inline-block rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white hover:bg-gold">
+            Ask About Custom Perfume
+          </a>
+        </div>
+
+        <div class="rounded-2xl bg-cream p-8">
+          <p class="mb-5 font-display text-2xl">The fragrance formula</p>
+
+          <div class="space-y-5">
+            <div class="flex items-center justify-between border-b border-sand pb-4">
+              <div>
+                <h3 class="font-semibold">Top Notes</h3>
+                <p class="mt-1 text-sm text-muted">The first impression</p>
+              </div>
+              <span class="text-gold">01</span>
+            </div>
+
+            <div class="flex items-center justify-between border-b border-sand pb-4">
+              <div>
+                <h3 class="font-semibold">Heart Notes</h3>
+                <p class="mt-1 text-sm text-muted">The character of the scent</p>
+              </div>
+              <span class="text-gold">02</span>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold">Base Notes</h3>
+                <p class="mt-1 text-sm text-muted">The lasting impression</p>
+              </div>
+              <span class="text-gold">03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="bg-white px-6 py-20">
+      <div class="mx-auto max-w-7xl">
+
+        <div class="mb-12 flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+              The collection
+            </p>
+            <h2 class="font-display text-4xl md:text-5xl">
+              Scents worth remembering
+            </h2>
+          </div>
+          <p class="max-w-md leading-7 text-muted">
+            Meet a few of our signature fragrance inspirations.
+          </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+
+          <article class="overflow-hidden rounded-2xl border border-sand">
+            <div class="flex h-64 items-center justify-center bg-[#E9D9C5]">
+              <div class="flex h-40 w-28 items-center justify-center rounded-xl border border-gold/70 bg-[#C9A77F] shadow-lg">
+                <span class="font-display text-xl text-ink">01</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="mb-2 text-xs uppercase tracking-widest text-gold">Warm · Earthy</p>
+              <h3 class="mb-3 font-display text-2xl">Golden Woods</h3>
+              <p class="text-sm leading-6 text-muted">
+                A comforting blend inspired by sandalwood, cedar, and amber.
+              </p>
+              <p class="mt-5 font-semibold">From ₱799</p>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl border border-sand">
+            <div class="flex h-64 items-center justify-center bg-[#F1DFD8]">
+              <div class="flex h-40 w-28 items-center justify-center rounded-xl border border-white/70 bg-[#D9A6A7] shadow-lg">
+                <span class="font-display text-xl text-ink">02</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="mb-2 text-xs uppercase tracking-widest text-gold">Soft · Floral</p>
+              <h3 class="mb-3 font-display text-2xl">Velvet Bloom</h3>
+              <p class="text-sm leading-6 text-muted">
+                A delicate floral-inspired scent with rose and jasmine notes.
+              </p>
+              <p class="mt-5 font-semibold">From ₱799</p>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl border border-sand">
+            <div class="flex h-64 items-center justify-center bg-[#E4E8D9]">
+              <div class="flex h-40 w-28 items-center justify-center rounded-xl border border-white/70 bg-[#B6C4A2] shadow-lg">
+                <span class="font-display text-xl text-ink">03</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="mb-2 text-xs uppercase tracking-widest text-gold">Fresh · Bright</p>
+              <h3 class="mb-3 font-display text-2xl">Morning Mist</h3>
+              <p class="text-sm leading-6 text-muted">
+                A refreshing inspiration featuring citrus and green tea.
+              </p>
+              <p class="mt-5 font-semibold">From ₱799</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="px-6 py-20">
+      <div class="mx-auto max-w-7xl">
+
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+            Simple by design
+          </p>
+          <h2 class="mb-4 font-display text-4xl md:text-5xl">
+            Your scent in three steps
+          </h2>
+          <p class="leading-7 text-muted">
+            Finding a fragrance you love should be an enjoyable experience.
+          </p>
+        </div>
+
+        <div class="grid gap-10 md:grid-cols-3">
+          <article class="text-center">
+            <span class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-sand font-display text-2xl">01</span>
+            <h3 class="mb-3 font-display text-2xl">Explore</h3>
+            <p class="leading-7 text-muted">
+              Discover fragrance families and the notes that interest you.
+            </p>
+          </article>
+
+          <article class="text-center">
+            <span class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-sand font-display text-2xl">02</span>
+            <h3 class="mb-3 font-display text-2xl">Personalize</h3>
+            <p class="leading-7 text-muted">
+              Share your preferences and explore combinations for your scent.
+            </p>
+          </article>
+
+          <article class="text-center">
+            <span class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-sand font-display text-2xl">03</span>
+            <h3 class="mb-3 font-display text-2xl">Make It Yours</h3>
+            <p class="leading-7 text-muted">
+              Connect with us to discuss your custom fragrance idea.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="bg-ink px-6 py-20 text-white">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
+
+        <div class="flex min-h-72 items-center justify-center rounded-3xl bg-[#494138] p-8">
+          <div class="max-w-sm text-center">
+            <span class="font-display text-7xl text-[#D6B58D]">S.</span>
+            <p class="mt-4 font-display text-3xl">A scent is a memory.</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-[#D6B58D]">
+            Our story
+          </p>
+          <h2 class="mb-6 font-display text-4xl md:text-5xl">
+            Fragrance is personal.
+          </h2>
+          <p class="mb-5 leading-8 text-stone-300">
+            At Scent Lab, we believe fragrance is more than a finishing touch.
+            It can remind you of a place, a moment, or a feeling you want to
+            carry with you.
+          </p>
+          <p class="leading-8 text-stone-300">
+            Our goal is to make exploring perfume approachable, creative, and
+            personal, one fragrance idea at a time.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="px-6 py-20">
+      <div class="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
+
+        <div>
+          <p class="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-gold">
+            Let's connect
+          </p>
+          <h2 class="mb-5 font-display text-4xl md:text-5xl">
+            Tell us about your signature scent.
+          </h2>
+          <p class="mb-8 max-w-lg leading-7 text-muted">
+            Have questions or an idea for your own fragrance? Send us a message
+            and tell us what kind of scent you have in mind.
+          </p>
+
+          <div class="space-y-4 text-sm">
+            <p><span class="font-semibold">Studio:</span> Scent Lab Custom Perfume Studio</p>
+            <p><span class="font-semibold">Service:</span> Custom fragrance inquiries</p>
+            <p><span class="font-semibold">Response:</span> We will follow up using the contact information you provide.</p>
+          </div>
+        </div>
+
+        <form id="contact-form" class="rounded-3xl border border-sand bg-white p-8">
+          <div class="mb-5">
+            <label for="name" class="mb-2 block text-sm font-semibold">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+              class="w-full rounded-xl border border-sand px-4 py-3 outline-none focus:border-gold"
+            >
+          </div>
+
+          <div class="mb-5">
+            <label for="email" class="mb-2 block text-sm font-semibold">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+              class="w-full rounded-xl border border-sand px-4 py-3 outline-none focus:border-gold"
+            >
+          </div>
+
+          <div class="mb-6">
+            <label for="message" class="mb-2 block text-sm font-semibold">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Describe the fragrance you have in mind..."
+              required
+              class="w-full resize-y rounded-xl border border-sand px-4 py-3 outline-none focus:border-gold"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-full bg-ink px-6 py-4 font-semibold text-white hover:bg-gold"
+          >
+            Send Inquiry
+          </button>
+
+          <p id="form-status" class="mt-4 text-sm text-muted" aria-live="polite">
+            This demonstration form does not send data to a server.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-ink px-6 py-8 text-white">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row sm:items-center">
+      <a href="#home" class="font-display text-2xl font-bold">
+        Scent<span class="text-[#D6B58D]">Lab.</span>
+      </a>
+
+      <p class="text-sm text-stone-300">
+        Discover a fragrance that feels like you.
+      </p>
+
+      <p class="text-sm text-stone-400">
+        &copy; <span id="current-year"></span> Scent Lab
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
